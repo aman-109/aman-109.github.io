@@ -7,12 +7,6 @@ import {
   Avatar,
   HStack,
   IconButton,
-  Button,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuDivider,
   useDisclosure,
   useColorModeValue,
   Stack,
@@ -41,7 +35,7 @@ export default function Simple() {
 
   return (
     <>
-      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
+      <Box bg={useColorModeValue('#eaf8f8', '#eaf8f8')} px={4} className={styles.mainBox}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}
@@ -51,7 +45,7 @@ export default function Simple() {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack justifyContent={{base:"center",md:"space-between"}}  w={"100%"} p={4} spacing={8} alignItems={'center'}>
-            <Box border="1px solid red" >
+            <Box >
             <Avatar
                   size={'md'}
                   src={
@@ -62,7 +56,7 @@ export default function Simple() {
             <HStack
               as={'nav'}
               spacing={8}
-             
+
               display={{ base: 'none', md: 'flex' }}>
               {Links.map((link) => (
                 <NavLink key={link}>{link}</NavLink>
@@ -82,7 +76,6 @@ export default function Simple() {
         ) : null}
       </Box>
 
-      <Box p={4}>Main Content Here</Box>
     </>
   );
 }
