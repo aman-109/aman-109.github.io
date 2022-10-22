@@ -1,6 +1,6 @@
 // import React from 'react'
 import { Link } from "react-scroll"
-import { ReactNode } from 'react';
+// import { ReactNode } from 'react';
 import {
   Box,
   Flex,
@@ -17,7 +17,7 @@ import styles from "./Navbar.module.css"
 
 const Links = ['Home','About','Skills','Projects', 'Contact'];
 
-const NavLink = ({ children }:{children: ReactNode}) => (
+const NavLink = ({ children }) => (
   <Link
   to={children}
   smooth={true}

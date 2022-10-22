@@ -17,6 +17,7 @@
     font-size: 40px ;
     font-weight: 400;
   }
+  
   .mainCont {
     display: grid;
     grid-template-columns: 30% 60%;
