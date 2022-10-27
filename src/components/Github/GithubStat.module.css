@@ -1,0 +1,13 @@
+/* .gitBox{
+    border: 1px solid;
+    
+} */
+
+.Github {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  

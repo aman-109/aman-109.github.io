@@ -1,204 +1,74 @@
-// import { Button } from "@chakra-ui/react";
-// // import { makeStyles } from "@mui/styles";
-// import styles from "./Hero.module.css";
+import {
+  Flex,
+  Heading,
+  Image,
+  Stack,
+  Text,
+  useBreakpointValue,
+} from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 
-// import { AiOutlineGithub } from "react-icons/ai";
-// import { AiFillLinkedin } from "react-icons/ai";
-
-// import { RiDownloadLine } from "react-icons/ri";
-// import { Fade } from "react-awesome-reveal";
-
-// // const useStyles = makeStyles({
-// //   contactBtn: {
-// //     color: "black",
-
-// //     backgroundColor: "rgb(208,135,104)",
-// //     width: "130px",
-// //     height: "45px",
-
-// //     "&:hover": {
-// //       backgroundColor: "rgb(221, 128, 23)",
-// //     },
-// //   },
-// //   linkedInIcon: {
-// //     fontSize: "40px",
-
-// //     color: "rgb(8, 111, 143)",
-// //     "&:hover": {
-// //       backgroundColor: "rgb(17, 155, 197)",
-// //     },
-// //   },
-// //   gitIcon: {
-// //     fontSize: "35px",
-// //     color: "rgb(42, 42, 42)",
-
-// //     "&:hover": {
-// //       backgroundColor: "rgb(100, 100, 100)",
-// //     },
-// //   },
-// //   a: {
-// //     textDecoration: "none",
-// //   },
-// // });
-// export function HeroSection() {
-//   // const classes = useStyles();
-//   return (
-//     <div className={styles.rootCont} id="hero">
-//       <Fade>
-//         <div className={styles.nameCont}>
-//           <p>Hi,</p>
-//           <p>
-//             I am <span>Aman</span>{" "}
-//           </p>
-//           <p>Full Stack Web Developer</p>
-//           {/* <a
-//             href="https://drive.google.com/file/d/1OXo0mM30KYrTHOwPubb2kjfaVDBzIbPy/view?usp=sharing"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//           >
-//             <Button variant="contained">
-//               <RiDownloadLine
-//                 style={{
-//                   fontSize: "18px",
-//                   marginLeft: "10px",
-//                   marginRight: "5px",
-//                 }}
-//               />
-//               Resume
-//             </Button>
-//           </a> */}
-//         </div>
-
-//          <div className={styles.photoCont}>
-//           <img
-//             src="https://user-images.githubusercontent.com/101388858/196033227-a44469e1-e6c8-43d7-a9d4-056c5007ca72.png"
-//             alt=""
-//             className={styles.heroImg}
-//           />
-//         </div>
-//         {/*
-//         <div className={styles.socialCont}>
-//           <a
-//             rel="noreferrer"
-//             href="https://www.linkedin.com/in/antara-5aa95a209/"
-//             className={classes.a}
-//             target="_blank"
-//           >
-//             <AiFillLinkedin className={styles.linkedInIcon} />
-//           </a>
-//           <a
-//             rel="noreferrer"
-//             href="https://github.com/Antara12345"
-//             className={classes.a}
-//             target="_blank"
-//           >
-//             <AiOutlineGithub className={styles.gitIcon} />
-//           </a>
-//         </div> */}
-//       </Fade>
-//     </div>
-//   );
-// }
-
-
-
-import { Button } from "@chakra-ui/react"
-// import { makeStyles } from "@material-ui/styles"
-import styles from "./Hero.module.css"
-
-// import { AiOutlineGithub } from "react-icons/ai"
-// import { AiFillLinkedin } from "react-icons/ai"
-
-// import { RiDownloadLine } from "react-icons/ri"
-import {Fade} from "react-awesome-reveal"
-
-// const useStyles = makeStyles({
-//   contactBtn: {
-//     color: "black",
-
-//     backgroundColor: "rgb(208,135,104)",
-//     width: "130px",
-//     height: "45px",
-
-//     "&:hover": {
-//       backgroundColor: "rgb(221, 128, 23)",
-//     },
-//   },
-//   linkedInIcon: {
-//     fontSize: "40px",
-
-//     color: "rgb(8, 111, 143)",
-//     "&:hover": {
-//       backgroundColor: "rgb(17, 155, 197)",
-//     },
-//   },
-//   gitIcon: {
-//     fontSize: "35px",
-//     color: "rgb(42, 42, 42)",
-
-//     "&:hover": {
-//       backgroundColor: "rgb(100, 100, 100)",
-//     },
-//   },
-//   a: {
-//     textDecoration: "none",
-//   },
-// })
-export function HeroSection() {
-  // const classes = useStyles()
+export default function SplitScreen() {
   return (
-    <div className={styles.rootCont} id="hero">
-      <Fade>
-        <div className={styles.nameCont}>
-          <p>Hi,</p>
-          <p>
-            I am <span>Antara</span>{" "}
-          </p>
-          <p>Full Stack Web Developer</p>
-          {/* <a
-            href="https://drive.google.com/file/d/1OXo0mM30KYrTHOwPubb2kjfaVDBzIbPy/view?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button variant="contained" >
-              <RiDownloadLine
-                style={{
-                  fontSize: "18px",
-                  marginLeft: "10px",
-                  marginRight: "5px",
-                }}
-              />
-              Resume
-            </Button>
-          </a> */}
-        </div>
-
-        <div className={styles.photoCont}>
-          <img
-            src="https://user-images.githubusercontent.com/101388858/196033227-a44469e1-e6c8-43d7-a9d4-056c5007ca72.png"
-            alt=""
-            className={styles.heroImg}
+  <div id="hero">
+    <Stack minH={'80vh'} direction={{ base: 'column', md: 'row' }}>
+      <Flex p={8} flex={1} align={'center'} justify={'center'}>
+        <Stack spacing={{base:"4",md:"5"}} w={'full'} maxW={'lg'} textAlign={{base:"center", md:"start"}}>
+          <Box margin={{base:"auto",md:"0"}} display="flex" color={"#ff6225"} fontWeight="bold" fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
+          Hi{" "}
+          <Image
+          width="50px"
+            style={{ marginLeft: "6px" }}
+            src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif"
+            alt="hand waveing"
           />
-        </div>
-        {/* <div className={styles.socialCont}>
-          <a
-            rel="noreferrer"
-            href="https://www.linkedin.com/in/antara-5aa95a209/"
-            className={classes.a}
-            target="_blank"
-          >
-            <AiFillLinkedin className={styles.linkedInIcon} />
-          </a>
-          <a
-            rel="noreferrer"
-            href="https://github.com/Antara12345"
-            className={classes.a}
-            target="_blank"
-          >
-            <AiOutlineGithub className={styles.gitIcon} />
-          </a>
-        </div> */}
-      </Fade>
+          ,
+          
+        </Box>
+        <Text fontWeight="bold" color={"#ff6225"} fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>I'm <Text color={"#383874"} as={"span"}>Aman Mate</Text> </Text>
+          <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
+            <Text
+              as={'span'}
+              position={'relative'}
+              color={"#383874"}
+              _after={{
+                content: "''",
+                width: 'full',
+                height: useBreakpointValue({ base: '20%', md: '30%' }),
+                position: 'absolute',
+                bottom: 1,
+                left: 0,
+                bg: '#ff6225',
+                zIndex: -1,
+              }}>
+                Full Stack
+            </Text>
+            <br />{' '}
+            <Text color={'#ff6225'} as={'span'}>
+              Web Developer
+            </Text>{' '}
+          </Heading>
+          {/* <Text fontSize={{ base: 'md', lg: 'lg' }} color={'#ff6225'}>
+            The project board is an exclusive resource for contract work. It's
+            perfect for freelancers, agencies, and moonlighters.
+          </Text> */}
+          
+        </Stack>
+      </Flex>
+      <Flex flex={1}>
+          <Box w="100%">
+
+        <Image
+          alt={'Login Image'}
+          objectFit={'cover'}
+          w="100%"
+          src={
+            'https://user-images.githubusercontent.com/101388858/196033227-a44469e1-e6c8-43d7-a9d4-056c5007ca72.png'
+          }
+        />
+          </Box>
+      </Flex>
+    </Stack>
     </div>
-  )
+  );
 }
