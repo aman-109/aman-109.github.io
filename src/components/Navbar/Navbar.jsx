@@ -23,7 +23,7 @@ export default function Simple() {
             // Setting various property values
             let alink = document.createElement('a');
             alink.href = fileURL;
-            alink.download = 'Aman Mate Resume.pdf';
+            alink.download = 'Aman-Mate-Resume.pdf';
             alink.click();
         })
     })

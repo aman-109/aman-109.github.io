@@ -16,6 +16,7 @@ import {
     InputGroup,
     InputLeftElement,
     Textarea,
+    Link,
   } from '@chakra-ui/react';
   import {
     MdPhone,
@@ -108,6 +109,7 @@ import {
                       spacing={5}
                       px={5}
                       alignItems="flex-start">
+                        <Link href="mailto:aman.mate.52@gmail.com" isExternal>
                       <IconButton
                         aria-label="facebook"
                         variant="ghost"
@@ -116,6 +118,8 @@ import {
                         _hover={{ bg: '#0D74FF' }}
                         icon={<MdEmail size="30px" />}
                       />
+                        </Link>
+                        <Link href="https://www.linkedin.com/in/amanmate109/" isExternal>
                         <IconButton
                           aria-label="discord"
                           variant="ghost"
@@ -124,6 +128,8 @@ import {
                           _hover={{ bg: '#0D74FF' }}
                           icon={<BsLinkedin size="28px" />}
                         />
+                        </Link>
+                        <Link href="https://github.com/aman-109" isExternal>
                       <IconButton
                         aria-label="github"
                         variant="ghost"
@@ -132,6 +138,7 @@ import {
                         _hover={{ bg: '#0D74FF' }}
                         icon={<BsGithub size="32px" />}
                       />
+                        </Link>
                     </HStack>
                   </Box>
                 </WrapItem>
