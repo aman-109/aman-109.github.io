@@ -134,9 +134,6 @@
       flex-direction: column;
       gap: 5%;
     }
-    .projInfo {
-      display: none;
-    }
     .stacksDiv {
       display: none;
     }
