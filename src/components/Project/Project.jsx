@@ -17,8 +17,12 @@ const projects = [
     about:
       " This is Zoom Car website which provide rental car. This was a team project where I with my teammates had created.My task was to do Login and Signup functionality, helped in the css part and some js functionality part.",
     stacks: [
-      <SiReact className={styles.stackIcon} />,
-      <SiChakraui className={styles.stackIcon} />,
+      // <SiReact className={styles.stackIcon} />,
+      // <SiChakraui className={styles.stackIcon} />,
+      <p className={styles.stackIcon}><SiReact />React Js</p>,
+      <p className={styles.stackIcon}><SiChakraui/>Chakra UI</p>,
+      
+
     ],
   },
   {
@@ -29,8 +33,10 @@ const projects = [
     about:
       "It is an Indian cricket news website owned by Times Internet. It features, news, articles and live coverage of cricket matches including videos, text commentary, player stats and team rankings.",
     stacks: [
-      <SiReact className={styles.stackIcon} />,
-      <SiChakraui className={styles.stackIcon} />,
+      ,
+      // <SiChakraui className={styles.stackIcon} />,
+      <p className={styles.stackIcon}><SiReact />React Js</p>,
+      <p className={styles.stackIcon}><SiChakraui/>Chakra UI</p>,
     ],
   },
   {
@@ -41,9 +47,12 @@ const projects = [
     about:
       "This is e-commerce website used for buying and supplying medicine across the world.This was a team project where I with my teammates had created.My task was to do Login and Signup functionality and help in the css part. ",
     stacks: [
-      <SiHtml5 className={styles.stackIcon} />,
-      <SiJavascript className={styles.stackIcon} />,
-      <SiCss3 className={styles.stackIcon} />,
+      // <SiHtml5 className={styles.stackIcon} />,
+      // <SiJavascript className={styles.stackIcon} />,
+      // <SiCss3 className={styles.stackIcon} />,
+      <p className={styles.stackIcon}><SiHtml5/>HTML</p>,
+      <p className={styles.stackIcon}><SiCss3/>CSS</p>,
+      <p className={styles.stackIcon}><SiJavascript/>JAVASCRIPT</p>,
     ],
   },
   {
@@ -54,9 +63,12 @@ const projects = [
     about:
       "Expedia is one of the fastest growing online travel portals in Asia, a comprehensive offering of flight inventory made available on the website, travellers can book rooms to meet every budget and travel services to complement.",
     stacks: [
-      <SiJavascript className={styles.stackIcon} />,
-      <SiHtml5 className={styles.stackIcon} />,
-      <SiCss3 className={styles.stackIcon} />,
+    //   <SiJavascript className={styles.stackIcon} />,
+    //   <SiHtml5 className={styles.stackIcon} />,
+    //   <SiCss3 className={styles.stackIcon} />,
+    <p className={styles.stackIcon}><SiHtml5/>HTML</p>,
+    <p className={styles.stackIcon}><SiCss3/>CSS</p>,
+    <p className={styles.stackIcon}><SiJavascript/>JAVASCRIPT</p>,
     ],
   },
 ];

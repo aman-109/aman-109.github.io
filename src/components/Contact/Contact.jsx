@@ -105,7 +105,7 @@ import {
                       </VStack>
                     </Box>
                     <HStack
-                      mt={{ lg: 10, md: 10 }}
+                      mt={{ lg: 5, md: 10 }}
                       spacing={5}
                       px={5}
                       alignItems="flex-start">
@@ -143,10 +143,10 @@ import {
                   </Box>
                 </WrapItem>
                 <WrapItem>
-                  <Box bg="white" borderRadius="lg">
+                  <Box width={{base:"300px",md:"400px",lg:"600px"}} bg="white" borderRadius="lg">
                     <Box m={8} color="#0B0E3F">
                       <VStack spacing={5}>
-                        <form onSubmit={handleOnSubmit}>
+                        <form style={{width:"100%"}} onSubmit={handleOnSubmit}>
                         <FormControl id="name">
                           <FormLabel>Your Name</FormLabel>
                           <InputGroup borderColor="#E0E1E7">

@@ -14,25 +14,29 @@ import styles from "./Navbar.module.css";
 
 export default function Simple() {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const onButtonClick = () => {
-    
-    fetch('AmanMateResume.pdf').then(response => {
-        response.blob().then(blob => {
-        
-            const fileURL = window.URL.createObjectURL(blob);
-            // Setting various property values
-            let alink = document.createElement('a');
-            alink.href = fileURL;
-            alink.download = 'Aman-Mate-Resume.pdf';
-            alink.click();
-        })
-    })
-}
+  //   const onButtonClick = () => {
 
-const Reload = () => {
-  window.location.reload();
-};
+  //     fetch('AmanMateResume.pdf').then(response => {
+  //         response.blob().then(blob => {
 
+  //             const fileURL = window.URL.createObjectURL(blob);
+  //             // Setting various property values
+  //             let alink = document.createElement('a');
+  //             alink.href = fileURL;
+  //             alink.download = 'Aman-Mate-Resume.pdf';
+  //             alink.click();
+  //         })
+  //     })
+  // }
+  const buttonClick = () => {
+    window.open(
+      "https://drive.google.com/file/d/11aGyyK6iuBeQ_mvU9WPJEbmzsREkxfMP/view?usp=sharing"
+    );
+  };
+
+  const Reload = () => {
+    window.location.reload();
+  };
 
   return (
     <>
@@ -58,12 +62,12 @@ const Reload = () => {
           >
             <Box>
               <Avatar
-               onClick={Reload}
-               boxSize={["10","12","14","16"]}
-               borderRadius="full"
-               className={styles.myLogo}
-              //  mt={['3','4','4','4']}
-              //  ml={['1','1','1','2']}
+                onClick={Reload}
+                boxSize={["10", "12", "14", "16"]}
+                borderRadius="full"
+                className={styles.myLogo}
+                //  mt={['3','4','4','4']}
+                //  ml={['1','1','1','2']}
                 size={"md"}
                 src="logo.png"
               />
@@ -73,7 +77,6 @@ const Reload = () => {
               spacing={8}
               display={{ base: "none", md: "flex" }}
             >
-             
               <Link
                 to="hero"
                 smooth={true}
@@ -124,17 +127,9 @@ const Reload = () => {
               >
                 <div className={styles.nav}>Contact</div>
               </Link>
-              <Link
-                to="resume"
-                smooth={true}
-                duration={1000}
-                activeClass={styles.active}
-                spy={true}
-                hashSpy={true}
-                onClick={onButtonClick }
-              >
+              <a download href="AmanMateResume.pdf" onClick={buttonClick}>
                 <div className={styles.nav}>Resume</div>
-              </Link>
+              </a>
             </HStack>
           </HStack>
         </Flex>
@@ -192,17 +187,9 @@ const Reload = () => {
               >
                 <div className={styles.nav}>Contact</div>
               </Link>
-              <Link
-                to="resume"
-                smooth={true}
-                duration={1000}
-                activeClass={styles.active}
-                spy={true}
-                hashSpy={true}
-                onClick={onButtonClick }
-              >
+              <a download href="AmanMateResume.pdf" onClick={buttonClick}>
                 <div className={styles.nav}>Resume</div>
-              </Link>
+              </a>
             </Stack>
           </Box>
         ) : null}

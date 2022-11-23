@@ -56,7 +56,7 @@ export default function SplitScreen() {
         </Stack>
       </Flex>
       <Flex flex={1}>
-          <Box w="100%">
+          <Box w="100%" display={"flex"} alignItems="center">
 
         <Image
           alt={'Login Image'}

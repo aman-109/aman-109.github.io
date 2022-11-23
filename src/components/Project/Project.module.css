@@ -20,8 +20,15 @@
     
   }
   .stackIcon {
-    color: #ff6225;
-    font-size: 30px;
+    color: #383874;
+    border: 1px solid #ff6225;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    font-size: 20px;
     margin: 5px;
   }
   a {
