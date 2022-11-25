@@ -44,7 +44,7 @@
     margin: auto;
     /* border: 2px solid black; */
     background-color: rgb(194, 195, 201);
-    border-radius: 10px;
+    border-radius: 50%;
   }
   @media only screen and (max-width: 1024px) {
     .rootCont {
