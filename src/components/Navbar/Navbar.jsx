@@ -127,7 +127,7 @@ export default function Simple() {
               >
                 <div className={styles.nav}>Contact</div>
               </Link>
-              <a download href="AmanMateResume.pdf" onClick={buttonClick}>
+              <a download href="Aman-Mate-Resume.pdf" onClick={buttonClick}>
                 <div className={styles.nav}>Resume</div>
               </a>
             </HStack>
@@ -187,7 +187,7 @@ export default function Simple() {
               >
                 <div className={styles.nav}>Contact</div>
               </Link>
-              <a download href="AmanMateResume.pdf" onClick={buttonClick}>
+              <a download href="Aman-Mate-Resume.pdf" onClick={buttonClick}>
                 <div className={styles.nav}>Resume</div>
               </a>
             </Stack>

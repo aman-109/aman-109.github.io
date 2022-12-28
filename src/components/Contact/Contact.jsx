@@ -27,8 +27,22 @@ import {
   import { BsGithub,BsLinkedin, BsPerson } from 'react-icons/bs';
   import emailjs from "@emailjs/browser"
   import Swal from 'sweetalert2'
+import { useState } from 'react';
+
+  const setTempFunc=()=>{
+   let temp= localStorage.getItem("temp") || false
+   if(temp=="true"){
+    return true
+   }
+   return false
+  }
   
   export default function ContactForm() {
+    const [mbl,setMbl]=useState(setTempFunc())
+
+    const fixIssue=()=>{
+      setMbl(true)
+    }
 
     const handleOnSubmit = (e) => {
         e.preventDefault()
@@ -40,6 +54,8 @@ import {
               icon: 'success',
               title: 'Message Sent Successfully',
             })
+            localStorage.setItem("temp",true)
+            fixIssue()
           },
           (error) => {
             console.log(error.text)
@@ -182,6 +198,7 @@ import {
                           <Button
                           type="submit"
                             variant="solid"
+                            disabled={mbl}
                             bg="#0D74FF"
                             color="white"
                             _hover={{}}>
