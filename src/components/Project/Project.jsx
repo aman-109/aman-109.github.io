@@ -5,10 +5,51 @@ import { SiHtml5 } from "react-icons/si";
 import { SiCss3 } from "react-icons/si";
 import { SiReact } from "react-icons/si";
 import { SiChakraui } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
+import { SiNodedotjs } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
 
 import { Fade } from "react-awesome-reveal";
 import { Text } from "@chakra-ui/react";
 const projects = [
+  {
+    name: "Hubpoint.com",
+    img: "Hubpoint.png",
+    link: "https://hubpoint-aman-109.vercel.app/",
+    git: "https://github.com/aman-109/axiomatic-spring-6378-HubPointCRM",
+    about:
+    "HubPoint is CRM website that provides app services, marketing and ad tools for the website which will divert traffic. It assists marketing, sales, content management, and customer service at every point by providing them with better strategy and resources.",
+    stacks: [
+      <p className={styles.stackIcon}><SiReact />React</p>,
+      <p className={styles.stackIcon}><SiChakraui/>Chakra UI</p>,
+      <p className={styles.stackIcon}><SiExpress/>Express</p>,
+      <p className={styles.stackIcon}><SiNodedotjs/>Node</p>,
+      <p className={styles.stackIcon}><SiMongodb/>MongoDB</p>,
+      // <SiReact className={styles.stackIcon} />,
+      // <SiChakraui className={styles.stackIcon} />,
+      
+
+    ],
+  },
+  {
+    name: "MuscleFit.com",
+    img: "MuscleFit.png",
+    link: "https://musclefit-201.netlify.app/",
+    git: "https://github.com/aman-109/dainty-market-1579-MuscleFit",
+    about:
+    "A MuscleFit is fitness application, that provides customer based customized workout plans and provide access to track them.It is social workout tracking platform that keeps gym goers stay motivated by tracking and analyzing their fitness goals.",
+    stacks: [
+      <p className={styles.stackIcon}><SiReact />React</p>,
+      <p className={styles.stackIcon}><SiChakraui/>Chakra UI</p>,
+      <p className={styles.stackIcon}><SiExpress/>Express</p>,
+      <p className={styles.stackIcon}><SiNodedotjs/>Node</p>,
+      <p className={styles.stackIcon}><SiMongodb/>MongoDB</p>,
+      // <SiReact className={styles.stackIcon} />,
+      // <SiChakraui className={styles.stackIcon} />,
+      
+
+    ],
+  },
   {
     name: "Zoomcar.com",
     img: "ZoomCar.png",
