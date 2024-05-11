@@ -6,7 +6,7 @@ export function AboutSection() {
   return (
     <div className={styles.rootCont} id="about">
       <Fade bottom>
-        <Text color={"#383874"} fontSize={{ base: "xl", md: "3xl" }}>About</Text>
+        <Text color={"#383874"} fontSize={{ base: "xl", md: "3xl" }}>Work Experience</Text>
         <div className={styles.mainCont}>
           <div className={styles.profilePicCont}>
             <img
@@ -15,16 +15,18 @@ export function AboutSection() {
               className={styles.profilePic}
             />
           </div>
-          <div>
-            <h2>
-              I am <span>Aman Mate</span>
-            </h2>
-            <p>
-              A web developer with a vast array of knowledge in many different
-              front end and backend languages, responsive frameworks, databases,
-              and best code practices. Look forward to using my skills for
-              gaining more experience.
-            </p>
+          <div>            <p>
+              <b>Intoglo Pvt Ltd ,</b> a cross-border logistics company              <br />
+              Associate Software Developer              <br />
+              Mar 2023 - Present              <br />
+              <br />              <ul className={styles.experiencebullets}>
+                <li>                Developed core features for a client-facing web application, enhancing user experience with real-time shipment tracking and detailed information, including location updates, status changes, and estimated delivery times.
+                  </li>                <li>
+                Collaborated with cross-functional teams to design and implement new features and improve existing codebase.                  </li>
+                  <li>                  Contributed to the development and launch of an AI-driven HS Classification system to streamline export processes.
+                  </li>                  <li>
+                    Automated the workflows using web scrapping techniques and cron jobs.                  </li>
+              </ul>            </p>
           </div>
         </div>
       </Fade>

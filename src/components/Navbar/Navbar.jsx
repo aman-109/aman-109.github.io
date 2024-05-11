@@ -30,7 +30,7 @@ export default function Simple() {
   // }
   const buttonClick = () => {
     window.open(
-      "https://drive.google.com/file/d/11aGyyK6iuBeQ_mvU9WPJEbmzsREkxfMP/view?usp=sharing"
+      "https://drive.google.com/file/d/1BVMgz9hkqrhQ0iZuZkoFYE3XdEZAapUL/view?usp=sharing"
     );
   };
 
