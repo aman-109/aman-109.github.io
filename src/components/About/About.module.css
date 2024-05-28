@@ -23,7 +23,7 @@
     display: grid;
     grid-template-columns: 30% 60%;
     gap: 10%;
-    color: #ff6225;
+    /* color: #ff6225; */
     font-size: 20px;
   }
   .mainCont > div {

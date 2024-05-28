@@ -93,6 +93,7 @@ import { useState } from 'react';
                           height="48px"
                           width="200px"
                           variant="ghost"
+                          justifyContent="flex-start"
                           color="#DCE2FF"
                           _hover={{ border: '2px solid #0D74FF' }}
                           leftIcon={<MdPhone color="#1970F1" size="20px" />}>
@@ -102,6 +103,7 @@ import { useState } from 'react';
                           size="md"
                           height="48px"
                           width="250px"
+                          justifyContent="flex-start"
                           variant="ghost"
                           color="#DCE2FF"
                           _hover={{ border: '2px solid #0D74FF' }}
@@ -112,6 +114,7 @@ import { useState } from 'react';
                           size="md"
                           height="48px"
                           width="200px"
+                          justifyContent="flex-start"
                           variant="ghost"
                           color="#DCE2FF"
                           _hover={{ border: '2px solid #0D74FF' }}
@@ -173,7 +176,7 @@ import { useState } from 'react';
                             <Input type="text" name="your_name" size="md" />
                           </InputGroup>
                         </FormControl>
-                        <FormControl id="name">
+                        <FormControl id="name" mt={4}>
                           <FormLabel>Mail</FormLabel>
                           <InputGroup borderColor="#E0E1E7">
                             <InputLeftElement
@@ -183,7 +186,7 @@ import { useState } from 'react';
                             <Input type="text" name="your_email" size="md" />
                           </InputGroup>
                         </FormControl>
-                        <FormControl id="name">
+                        <FormControl id="name" mt={4}>
                           <FormLabel>Message</FormLabel>
                           <Textarea
                             borderColor="gray.300"
@@ -194,7 +197,7 @@ import { useState } from 'react';
                             placeholder="message"
                           />
                         </FormControl>
-                        <FormControl id="name" float="right">
+                        <FormControl id="name" float="right" mt={4}>
                           <Button
                           type="submit"
                             variant="solid"

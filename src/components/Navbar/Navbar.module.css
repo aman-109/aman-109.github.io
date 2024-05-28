@@ -22,8 +22,13 @@
     justify-content: center;
     color:#ff6225
   }
-  .nav:hover {
+  /* .nav:hover {
     border-bottom: 3px solid #383874;
+  } */
+  
+  .active {
+    border-bottom: 3px solid #383874;
+
   }
 
   /* Animation for smaller screen  */
