@@ -48,10 +48,9 @@ export default function SplitScreen() {
               Web Developer
             </Text>{' '}
           </Heading>
-          {/* <Text fontSize={{ base: 'md', lg: 'lg' }} color={'#ff6225'}>
-            The project board is an exclusive resource for contract work. It's
-            perfect for freelancers, agencies, and moonlighters.
-          </Text> */}
+          <Text fontSize={{ base: 'md', lg: 'xl' }} color={'#383874'}>
+            With 3+ years of experience, I have developed and delivered high-quality web applications.
+          </Text>
           
         </Stack>
       </Flex>

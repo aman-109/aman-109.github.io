@@ -31,7 +31,7 @@ import { useState } from 'react';
 
   const setTempFunc=()=>{
    let temp= localStorage.getItem("temp") || false
-   if(temp=="true"){
+   if(temp==="true"){
     return true
    }
    return false
@@ -97,7 +97,7 @@ import { useState } from 'react';
                           color="#DCE2FF"
                           _hover={{ border: '2px solid #0D74FF' }}
                           leftIcon={<MdPhone color="#1970F1" size="20px" />}>
-                          +91-8208584760
+                          +91-8390345989
                         </Button>
                         <Button
                           size="md"

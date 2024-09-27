@@ -63,19 +63,28 @@
   color: rgb(208,135,104);
 }
 
+.nextjsIcon:hover {
+  color: black;
+}
 .reactIcon:hover {
   color: rgb(94, 211, 243);
 }
 .reduxIcon:hover {
   color: rgb(118, 76, 183);
 }
+.tsIcon:hover {
+  color: rgb(24, 156, 244);
+}
 .jsIcon:hover {
   color: rgb(247, 223, 30);
 }
 .cuiIcon:hover {
-  color: rgb(91,201,200);
+  color: rgb(94, 211, 243);
 }
 .htmlIcon:hover {
+  color: rgb(233, 98, 40);
+}
+.awsIcon:hover {
   color: rgb(233, 98, 40);
 }
 .cssIcon:hover {
@@ -84,8 +93,14 @@
 .nodeIcon:hover {
   color: rgb(95, 151, 89);
 }
+.adnodeIcon:hover {
+  color: rgb(118, 76, 183);
+}
 .mongoIcon:hover {
   color: rgb(82, 167, 75);
+}
+.sqlIcon:hover {
+  color: rgb(117, 98, 205);
 }
 .gitIcon:hover {
   color: rgb(232, 78, 49);
